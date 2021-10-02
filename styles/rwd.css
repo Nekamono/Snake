@@ -1,0 +1,47 @@
+@media screen and (max-width: 420px){
+  span {
+    font-size: .65em;
+  } 
+  div.mobile-arrows i{
+    font-size:1.5em;
+  }
+  .namesAndScores{
+  height:100px;
+  overflow:auto
+  }
+}
+@media screen and (max-width: 540px){
+  .frame {
+    height: 79vw!important;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  span {
+    font-size: .70em;
+  }
+}
+@media (orientation: landscape) and (max-width: 920px){
+  .frame {
+    height: 280px;
+    width: 350px;
+  }
+  a.restart{
+    font-size: 1.7vw;
+    bottom: 1.5vw;
+    right: 2vw;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  span {
+    font-size: .75em;
+  }
+  div.mobile-arrows{
+    display:grid;
+  }
+  .namesAndScores{
+  height:110px;
+  overflow:auto
+  }
+}

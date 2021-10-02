@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  outline:0;
+  margin:0;
+}
+main{
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+  height:100%;
+}
+
+div.first-game,
+div.instructions,
+div.contributors,
+div.graphics,
+div.canvas-div{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+  height:100%;
+  box-shadow: inset 0 0 8rem black,
+    inset 0 0 3rem black;
+  padding:20px;
+}
+div.canvas-div{
+  position: absolute;
+}
+
+a.restart {
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    /* margin: 350px 420px; */
+    font-size: 20px;
+    /* color: white!important; */
+    opacity: 0.2;
+    bottom: 14px;
+    right: 20px;
+    /* width: 56px; */
+    /* text-align: right; */
+    z-index: 10;
+    text-transform: UPPERCASE;
+}
+
+
+
+canvas#defaultCanvas0 {
+  width: 100%!important;
+  height: 50%!important;
+}
+
+img.logo{
+  position:absolute;
+  top:-10%;
+  left:7%;
+  pointer-events: none;
+  opacity:.02;
+}
+div.container-buttons-restart{
+  /* display:flex;
+  flex-direction:column;
+  flex-wrap:nowrap; */
+  height:100%;
+}
+div.mobile-arrows{
+  display:none;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  height:100%;
+}
+div.grid-cell{
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+  padding:20px;
+}
+div.mobile-arrows i{
+  display: block;
+  text-align: center;
+  font-size:2em;
+  opacity:.05;
+}
+
+span.userPlusScore {
+    display: block;
+}
+.namesAndScores{
+  height:150px;
+  overflow:auto
+}
+.myChartScoresContainer{
+  height:150px;
+  overflow:auto;
+  padding:0 20px;
+}
+.show{
+  display:flex!important;
+}
+.hide{
+  display:none!important;
+}
